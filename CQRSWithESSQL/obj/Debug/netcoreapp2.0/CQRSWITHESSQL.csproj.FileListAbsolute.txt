@@ -1,0 +1,11 @@
+C:\Users\Morka\source\repos\CQRS-With-Custom-EventStore-SQL\CQRSWITHESSQL\bin\Debug\netcoreapp2.0\CQRSWITHESSQL.deps.json
+C:\Users\Morka\source\repos\CQRS-With-Custom-EventStore-SQL\CQRSWITHESSQL\bin\Debug\netcoreapp2.0\CQRSWITHESSQL.runtimeconfig.json
+C:\Users\Morka\source\repos\CQRS-With-Custom-EventStore-SQL\CQRSWITHESSQL\bin\Debug\netcoreapp2.0\CQRSWITHESSQL.runtimeconfig.dev.json
+C:\Users\Morka\source\repos\CQRS-With-Custom-EventStore-SQL\CQRSWITHESSQL\bin\Debug\netcoreapp2.0\CQRSWITHESSQL.dll
+C:\Users\Morka\source\repos\CQRS-With-Custom-EventStore-SQL\CQRSWITHESSQL\bin\Debug\netcoreapp2.0\CQRSWITHESSQL.pdb
+C:\Users\Morka\source\repos\CQRS-With-Custom-EventStore-SQL\CQRSWITHESSQL\obj\Debug\netcoreapp2.0\CQRSWITHESSQL.csprojResolveAssemblyReference.cache
+C:\Users\Morka\source\repos\CQRS-With-Custom-EventStore-SQL\CQRSWITHESSQL\obj\Debug\netcoreapp2.0\CQRSWITHESSQL.csproj.CoreCompileInputs.cache
+C:\Users\Morka\source\repos\CQRS-With-Custom-EventStore-SQL\CQRSWITHESSQL\obj\Debug\netcoreapp2.0\CQRSWITHESSQL.AssemblyInfoInputs.cache
+C:\Users\Morka\source\repos\CQRS-With-Custom-EventStore-SQL\CQRSWITHESSQL\obj\Debug\netcoreapp2.0\CQRSWITHESSQL.AssemblyInfo.cs
+C:\Users\Morka\source\repos\CQRS-With-Custom-EventStore-SQL\CQRSWITHESSQL\obj\Debug\netcoreapp2.0\CQRSWITHESSQL.dll
+C:\Users\Morka\source\repos\CQRS-With-Custom-EventStore-SQL\CQRSWITHESSQL\obj\Debug\netcoreapp2.0\CQRSWITHESSQL.pdb

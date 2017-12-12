@@ -5,7 +5,7 @@ namespace CQRSWITHES.src.ReadModels
 {
     public class ExampleReadModel : ReadModel
     {
-        public override void EventPublish( EventModel anEvent)
+        public override dynamic EventPublish( EventModel anEvent)
         {
             var readModelCollection = Book.book;
             switch (anEvent.EventType)
@@ -22,13 +22,16 @@ namespace CQRSWITHES.src.ReadModels
                     // the readModelCollection is a dictionary with is Keyed to the words in it before the "ReadModel"  When building a new readModel, be
                     // aware that case is important and everything after the word "Read" will be ignored.  
                     readModelCollection["Example"].Add(example);
-                    break;                
+                    return example;
             }
             Book.book = readModelCollection;
+            return null;
         }
     }
     // Here is the model for the data that we want to include in this readmodel.  We can add to this when we decide that we 
     // care about more information than we cared about before.
+    // ** note, this class cannot contain the word read
+
         public class exampleData : ReadModelData
         {
             public string Name { get; set; }

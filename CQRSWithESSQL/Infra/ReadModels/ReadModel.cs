@@ -7,6 +7,6 @@ namespace CQRSWITHES.Infra.ReadModels
 {
     public abstract class ReadModel
     {
-        public abstract void EventPublish(EventModel anEvent);
+        public abstract dynamic EventPublish(EventModel anEvent);
     }
 }

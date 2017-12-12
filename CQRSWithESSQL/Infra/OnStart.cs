@@ -1,5 +1,6 @@
 ﻿using CQRSWITHES.Infra.EventStore;
 using CQRSWITHES.Infra.EventStore;
+using CQRSWITHESSQL.Infra.Sql;
 
 namespace CQRSWITHES.Infra
 {
@@ -7,7 +8,8 @@ namespace CQRSWITHES.Infra
     {
          public static void Start()
          {
-           ReadSaved.SavedEventReader();
+             ReadSaved.SavedEventReader();
+             TableReadmodelInterface.CheckForTables();
          }                
     }
 }

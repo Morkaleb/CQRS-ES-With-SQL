@@ -11,12 +11,12 @@ namespace CQRSWITHES.Infra.EventStore
         public static void Work(Events evt)
         {
             evt.TimeStamp = DateTime.Now;
-            EventModel normalizedEvent = normalizeEvent(evt);
+            EventModel normalizedEvent = NormalizeEvent(evt);
             EventStore.Store(normalizedEvent);
             EventQueue.Queue(normalizedEvent);
         }
 
-        private static EventModel normalizeEvent(Events evt)
+        private static EventModel NormalizeEvent(Events evt)
         {
             EventModel publishableEvent = new EventModel
             {
@@ -31,14 +31,14 @@ namespace CQRSWITHES.Infra.EventStore
                     propertyInfo.Name.ToString() != "TimeStamp" &&
                     propertyInfo.Name.ToString() != "EventType")
                 {
-                    var value = getValues(evt, propertyInfo.Name).ToString();
+                    var value = GetValues(evt, propertyInfo.Name).ToString();
                     publishableEvent.body.Add(propertyInfo.Name, value);
                 }
             }
             return publishableEvent;
         }
 
-        private static object getValues(object anEvent, string name)
+        private static object GetValues(object anEvent, string name)
         {
             return anEvent.GetType().GetProperties()
                 .Single(pi => pi.Name == name)
